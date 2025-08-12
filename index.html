@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flappy Roket — Game Web</title>
+  <meta name="description" content="Game web sederhana bergaya Flappy Bird. Main di browser, tinggal klik/tekan untuk terbang.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar" aria-label="Toolbar permainan">
+    <div class="brand">🚀 Flappy <strong>Roket</strong></div>
+    <nav class="actions">
+      <button id="btnPause" class="btn" aria-pressed="false" aria-label="Jeda (P)">⏸️ Jeda</button>
+      <button id="btnRestart" class="btn" aria-label="Mulai ulang (R)">⟲ Ulang</button>
+      <button id="btnMute" class="btn" aria-pressed="false" aria-label="Bisukan suara (M)">🔊 Suara</button>
+      <a class="btn link" href="README.html" target="_blank" rel="noopener">Panduan</a>
+    </nav>
+  </header>
+
+  <main class="stage">
+    <canvas id="game" aria-label="Kanvas permainan"></canvas>
+    <div id="uiOverlay" class="overlay" aria-live="polite"></div>
+    <noscript>
+      <div class="noscript">
+        Game ini membutuhkan JavaScript aktif. Silakan aktifkan JavaScript pada browser Anda.
+      </div>
+    </noscript>
+  </main>
+
+  <footer class="foot">
+    <div>Made with R Zanuar Eko Prastio</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
